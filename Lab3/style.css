@@ -1,0 +1,45 @@
+body {
+    background-color: antiquewhite;
+}
+
+.wrapper {
+    width: 90%;
+    display: grid;
+    grid-gap: 20px;
+    background-color: rgba(13, 13, 14, 0.671);
+    padding: 10px;
+    grid-template-columns: 3fr 1fr 1fr;
+    grid-auto-rows: 200px;
+}
+
+.wrapper>div {
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 100%;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
+}
+
+.item1 {
+    grid-column: 1;
+    grid-row: 1 / span 2;
+}
+
+p {
+    position: absolute;
+    right: 100px;
+    top: 100px;
+    left: 100px;
+    bottom: 100px;
+    max-width: 100%;
+    height: auto;
+    background-color: #fafafa;
+    border: solid 2px #d61010;
+    font-size: 24px;
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+    height: 100%;
+}
