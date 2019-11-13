@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bank MiniApp</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+        <a class="navbar-brand" href="#">CS472 ::: Mini Banking App</a>
+        <!-- Toggler/collapsibe Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+    </nav>
+    <div class="container">
+        <form action="" method="GET" id="formid">
+            <fieldset>
+                <div>
+                    <h3>Bank Account Form</h3>
+                </div>
+                <div class="form-group">
+                    <label for="accountnolabel">Account No</label>
+                    <input type="text" id="accountnumid" name="" placeholder="01-XXX-XXXX" class="form-control" pattern="[01]{2}-[0-9]{3}-[0-9]{4}" title="Student ID must be in the format 01-XXX-XXXX" maxlength="11 " required>
+                    <small>Your unique Account Number</small>
+                </div>
+                <div class="form-group ">
+                    <label for="customernamelabel ">Customer Name</label>
+                    <input type="text " id="customernameid" name=" " placeholder="e.g John B,Smith " class="form-control " required>
+                </div>
+                <div class="form-group ">
+                    <label for="exampleFormControlSelect1 ">Type of Account</label>
+                    <select class="form-control " id="typeofaccountid" required>
+                      <option>Checking</option>
+                      <option>Saving</option>
+                      <option>Loan</option>
+                    </select>
+                </div>
+                <button type="submit " id="btnnewAccount " class="btn btn-primary mb-2 ">Create New Account</button>
+                <ul class="list-group " id="ullist">
+                    <li class="list-group-item active ">List of Customer Accounts</li>
+                </ul>
+                <br>
+                <footer class="footer">
+                    <div class="container">
+                        <span class="text-muted">CS472Bank-WAP</span><span style="float:right;" class="text-muted">&copy November 2019</span>
+                    </div>
+                </footer>
+            </fieldset>
+        </form>
+    </div>
+
+    <script src="js/jquery/jquery-3.2.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+    <script src="js/app.js"></script>
+</body>
+
+
+</html>
