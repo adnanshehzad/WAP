@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Lab 7 Testing</h1>
+    <script>
+        //Object Literal for qUESTION NO 10
+        const Employee = (function() {
+
+            let name = "";
+            let age = 23;
+            let salary = "";
+
+            function setSalary(salary) {
+                this.salary = salary;
+            }
+
+            function setage(age) {
+                this.age = age;
+            }
+
+            function setName(name) {
+                this.name = name;
+            }
+
+            function getName() {
+                return this.name;
+            }
+
+            function getAge() {
+                return this.age;
+            }
+
+            function getSalary() {
+                return this.salary;
+            }
+
+            function IncreaseSalary(percentage) {
+                this.setSalary(this.getSalary + (this.getSalary * percentage) / 100);
+            }
+
+            function incrementAge() {
+                this.setage(this.getAge + 1);
+            }
+            //Public Members
+            return {
+                setAge: setage,
+                setSalary: setSalary,
+                setName: setName,
+                getName: getName,
+                getAge: getAge,
+                getSalary: getSalary,
+                IncreaseSalary: IncreaseSalary,
+                incrementAge: incrementAge
+            }
+
+        })();
+
+        Employee.setAge(23);
+        Employee.setName("Adnan");
+        Employee.setSalary(10000);
+        console.log(`Employee Age is ${Employee.getAge()} \n Employee Name is ${Employee.getName()} \n Employee Salary is ${Employee.getSalary()}`);
+    </script>
+</body>
+
+</html>
